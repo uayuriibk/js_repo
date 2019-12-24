@@ -1,6 +1,6 @@
 # js_repo
 
-Exercises. JavaScript 
+JavaScript cheatsheet. Exercises
 
 1. Buble sorting
 2. Factorial
