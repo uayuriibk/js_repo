@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title> Bubble Sort </title>
+</head>
+<body>
+  <script>
+    document.write("<h2> Fibonacci sequence</h2>");
+    document.write("<br><br>");
+    var n = Number(prompt("Enter item " + (n)));
+
+    document.write("<h2>Entered position number:</h2>");
+    document.write("<br><br>");
+    document.write("<h3> " + n + "</h3>");
+
+    function fibonacci(num) {
+        if (num <= 1) return 1;
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+
+    var result = fibonacci(n);
+
+    document.write("<br><br>");
+    document.write("<h2>Result number: </h2>");
+    document.write("<br><br>");
+
+    document.write("<h3> " + result + "</font>");
+  </script>
+</body>
+</html>
