@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> Bubble Sort </title>
+</head>
+<body>
+<script>
+    
+    document.write("<h2> BUBBLE SORT</h2>");
+    document.write("<br><br>");
+
+    var values=[]; var a=0,b=0;
+    for (a=0; a<5; a++) {
+        values.push(Number(prompt("Enter item " + (a+1))));
+    }
+    document.write("<h2>Original numbers:</h2>");
+    document.write("<br><br>");
+    for (a=0;a<5; a++) {
+        document.write("<h3> " +values[a] + "</h3>");
+    }
+    for (a = 0; a < ( 5 - 1 ); a++) {
+        for (b = 0; b < 5 - a - 1; b++) {
+            if (values[b] > values[b+1]){
+                swap= values[b];
+                values[b]= values[b+1];
+                values[b+1] = swap;
+            }
+        }
+    }
+
+    document.write("<br><br>");
+    document.write("<h2>Sorted Numbers: </h2>");
+    document.write("<br><br>");
+
+    for (a=0; a<5; a++) {
+        document.write("<h3> " + values[a]+"</font>");
+    }
+</script>
+</body>
+</html>
