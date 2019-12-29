@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title> Factorial </title>
+</head>
+<body>
+
+<script>    
+    document.write("<h2> Factorial </h2>");
+    document.write("<br><br>");
+
+    var n = Number(prompt("Enter n " + (n)));
+    
+    document.write("<h2>Entered number:</h2>");
+    document.write("<br><br>");
+    document.write("<h3> " + n + "</h3>");
+    
+    function factorial(num) {
+      if (num < 0) {
+        return -1;
+      } else if (num == 0) {
+        return 1;
+      } else {
+        return (num * factorial(num -1));
+      }
+    }
+
+    var result = factorial(n);
+
+    document.write("<br><br>");
+    document.write("<h2>Result: </h2>");
+    document.write("<br><br>");
+    document.write("<h3> " + result + "</font>");
+</script>
+
+</body>
+</html>
